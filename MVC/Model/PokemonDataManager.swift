@@ -36,16 +36,18 @@ class PokemonDataManager {
         23: ("Sandshrew", "Excavar", "Tierra")
     ]
 
-    func fetch() { //importante para traer y poblar data
+    func fetch() {
         pokemons.removeAll()
-        for (id, data) in pokemonDictionary {
+        for id in pokemonDictionary.keys.sorted() {
+            if let data = pokemonDictionary[id] {
                 pokemons.append(Pokemon(
                     imageId: id,
                     name: data.name,
                     movement: data.movement,
                     skill: data.skill
                 ))
-        }//Itero diccionario
+            }
+        }
     }
     func getPokemons(at index: Int) -> Pokemon{
         return pokemons[index]
