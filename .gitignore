@@ -1,0 +1,44 @@
+# Archivos temporales de Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad
+*.xcworkspace/xcuserdata/
+
+# Archivos de configuración local
+*.xcconfig
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Archivos de conflicto o copias temporales
+*~refs*
+*~MVC*
+*~
+*.orig
+*.rej
+
+# Archivos de sistema
+.DS_Store
+*.swp
+*.lock
+*.tmp
+
+# Swift Package Manager
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Archivos de logs
+*.log
+
+# Archivos de screenshots o testing temporal
+*.png~
+
